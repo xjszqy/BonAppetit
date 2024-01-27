@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class Test : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public MicroRecord microRecord;
     public float minVolume=20f;
+    public float canElimateVolume = 30f;
     public float minPosition = -4f;
     public float maxPosition = 4f;
     public float mintPitch = 90f;
@@ -37,5 +38,9 @@ public class Test : MonoBehaviour
             targetY = minPosition;
             transform.position = Vector2.Lerp(transform.position, new Vector2(0f, targetY), Time.deltaTime * returnSpeed);
         }
+    }
+    public bool canEliminate()
+    {
+        return (microRecord.volume > canElimateVolume);
     }
 }
