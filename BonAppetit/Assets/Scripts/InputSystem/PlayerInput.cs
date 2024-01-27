@@ -28,12 +28,14 @@ public class PlayerInput : MonoBehaviour
         if (!isPaused)
         {
             Time.timeScale = 0;
+            GamePlayUIManager.Instance.OpenPausePanel();
             SwitchToDynamicUpdateMode();
             isPaused = true;
         }
         else
         {
             Time.timeScale = 1f;
+            GamePlayUIManager.Instance.ClosePausePanel();
             SwitchToFixedUpdateMode();
             isPaused = false;
         }
