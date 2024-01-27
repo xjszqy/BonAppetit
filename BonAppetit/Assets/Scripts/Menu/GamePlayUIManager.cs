@@ -32,7 +32,7 @@ public class GamePlayUIManager : Singleton<GamePlayUIManager>
     }
     private void Staff()
     {
-        SceneLoader.Instance.LoadStaffWithCoroutine();
+        SceneLoader.Instance.LoadStaffWithCoroutine(); 
     }
 
     private void BackToMenu()
