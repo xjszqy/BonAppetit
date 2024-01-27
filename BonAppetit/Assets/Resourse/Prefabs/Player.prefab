@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5046445783817486321}
   - component: {fileID: 7516424515673260858}
   - component: {fileID: 8622628616930986233}
+  - component: {fileID: 7967688804948436846}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1749,7 +1750,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microRecord: {fileID: 5046445783817486321}
-  minVolume: 20
+  minVolume: 10
+  canElimateVolume: 30
   minPosition: -4
   maxPosition: 4
   mintPitch: 90
@@ -1758,3 +1760,16 @@ MonoBehaviour:
   returnSpeed: 1
   centerPoz: {x: 0, y: 0}
   targetY: 0
+--- !u!114 &7967688804948436846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534936931408618524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2e8fd35db51fa43a6e512359127c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPaused: 0
