@@ -41,7 +41,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""57199421-5c1e-4003-82df-4705779a441a"",
-                    ""path"": ""<Keyboard>/tab"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
