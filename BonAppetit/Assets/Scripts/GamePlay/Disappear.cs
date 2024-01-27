@@ -9,17 +9,25 @@ public class Disappear : MonoBehaviour
     [Header("Òô·û")]
     public GameObject Yinfu;
     public GameObject DeadLine;
+    private Vector2 lerpPoxitionX;
+
+    private void Start()
+    {
+        material.SetFloat("_DisappearOffset", 2.5f);
+
+    }
     private void Update()
     {
-        
-
+        lerpPoxitionX = Yinfu.transform.position - DeadLine.transform.position;
+        Debug.Log(-lerpPoxitionX.x + 2.5f);
+        material.SetFloat("_DisappearOffset", -lerpPoxitionX.x + 2.5f);
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name == "DeadLine")
-        {
-            //material.SetFloat("_DisappearOffset",);
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.name == "DeadLine")
+    //    {
+    //        material.SetFloat("_DisappearOffset", -lerpPoxitionX.x+2.5f);
+    //    }
+    //}
 }
