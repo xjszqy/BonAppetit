@@ -18,13 +18,10 @@ public class GamePlay : MonoBehaviour
     [Header("ÀŸ∂»")]
     public float speed;
     Rigidbody2D rb;
-
-    public bool isPlaying;// «∑Ò‘›Õ£
     // Start is called before the first frame update
     void Start()
     {
         currentTime = endTime;
-        isPlaying = true;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -41,10 +38,9 @@ public class GamePlay : MonoBehaviour
         }
         else
         {
-            if(isPlaying)
+            if (Time.timeScale != 0)
             {
                 CountDown();
-                Stop();
             }
         }
     }
@@ -73,27 +69,6 @@ public class GamePlay : MonoBehaviour
         rb.velocity = new Vector2(speed, 0);
     }
 
-    public void Stop()
-    {
-        if (isPlaying)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                isPlaying = false;
-                SwitchToDynamicUpdateMode();
-                Time.timeScale = 0;
-            }
-        }
-        else 
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                isPlaying = true;
-                SwitchToFixedUpdateMode();
-                Time.timeScale = 1;
-            }
-        }
-    }
 
     public void SwitchToDynamicUpdateMode()
     {
