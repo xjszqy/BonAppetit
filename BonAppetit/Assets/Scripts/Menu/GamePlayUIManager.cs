@@ -30,6 +30,19 @@ public class GamePlayUIManager : Singleton<GamePlayUIManager>
     {
         settlePanel.SetActive(true);
     }
+    public void CloseSettlePanel()
+    {
+        Time.timeScale = 1f;
+        settlePanel.SetActive(false);
+    }
+    public void OpenPausePanel()
+    {
+        pausePanel.SetActive(true);
+    }
+    public void ClosePausePanel()
+    {
+        pausePanel.SetActive(false);
+    }
     private void Staff()
     {
         SceneLoader.Instance.LoadStaffWithCoroutine(); 
@@ -43,17 +56,5 @@ public class GamePlayUIManager : Singleton<GamePlayUIManager>
     private void ReStart()
     {
         SceneLoader.Instance.LoadGameSceneWithCoroutine();
-    }
-    public void CloseSettlePanel()
-    {
-        settlePanel.SetActive(false);
-    }
-    public void OpenPausePanel()
-    {
-        pausePanel.SetActive(true);
-    }
-    public void ClosePausePanel()
-    {
-        pausePanel.SetActive(false);
     }
 }
