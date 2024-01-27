@@ -8,4 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/C2H6O/Menu.unity
+    guid: b7498dfb13a4b9247a6f3ecabd1cb273
+  - enabled: 1
+    path: Assets/Scenes/C2H6O/Teach.unity
+    guid: b4e0d3c47560deb40abe62239c3f59a8
+  - enabled: 1
+    path: Assets/Scenes/C2H6O/MainGame.unity
+    guid: 6d36434f386520e4dafac391cb36784a
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 0d01eef01b721a949be0bd7a40cdfbde, type: 2}
