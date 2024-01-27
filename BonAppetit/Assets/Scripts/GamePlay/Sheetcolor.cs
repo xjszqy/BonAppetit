@@ -7,8 +7,11 @@ public class Sheetcolor : MonoBehaviour
     private SpriteRenderer spRender;
     [Header("判定线")]
     public GameObject deadLine;
-
-    void Start()
+    [Header("fail特效")]
+    public ParticleSystem failParticleSystem;
+    [Header("Combo特效")]
+    public ParticleSystem comboParticleSystem;
+    private void Start()
     {
         spRender = GetComponent<SpriteRenderer>();
     }
@@ -17,6 +20,12 @@ public class Sheetcolor : MonoBehaviour
         if (collision.name =="DeadLine")
         {
             spRender.color = Color.red;
+        }
+        if (collision.name == "DestroyLine")
+        {
+            failParticleSystem.Play();
+            failParticleSystem.transform.position = this.transform.position;
+            Destroy(gameObject);
         }
     }
 }
