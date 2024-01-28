@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.EnhancedTouch;
 using static UnityEngine.GraphicsBuffer;
 
 public class Player : MonoBehaviour
@@ -33,8 +34,14 @@ public class Player : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {    
-        if(isEating)
+    {
+        if (canEliminate())
+        {
+            isEating = true;
+            currentEatingTime = eatTime;
+            animator.SetBool("isEat", true);
+        }
+        if (isEating)
         {
             currentEatingTime -= Time.deltaTime;
         }
@@ -66,16 +73,18 @@ public class Player : MonoBehaviour
     {
         return (microRecord.volume > canElimateVolume);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag== "Yinfu")
         {
             if (canEliminate())
             {
                 GamePlayUIManager.Instance.comboNumer++;
-                isEating = true;
-                currentEatingTime = eatTime;
-                animator.SetBool("isEat", true);
+                Debug.Log("enter");
+                collision.GetComponent<Disappear>().isPressed = true;
+                //isEating = true;
+                //currentEatingTime = eatTime;
+                //animator.SetBool("isEat", true);
                 //Destroy(collision.gameObject);
             }
         }
