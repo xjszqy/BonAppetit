@@ -17,10 +17,11 @@ public class Player : MonoBehaviour
     public Vector2 centerPoz= Vector2.zero;
     public float targetY;
     public float time = 5f;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
     public float Conversion(float pitch)
     {
@@ -33,12 +34,16 @@ public class Player : MonoBehaviour
         {
             targetY = Conversion(microRecord.pitch);
             transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, targetY), Time.deltaTime * returnSpeed);
+            animator.SetBool("isMove", true);
         }
         else
         {
             targetY = minPosition;
             transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, targetY), Time.deltaTime * returnSpeed);
+            animator.SetBool("isMove", true);
         }
+        animator.SetBool("isMove", false);
+        animator.SetBool("isEat", false);
     }
     public bool canEliminate()
     {
@@ -52,6 +57,7 @@ public class Player : MonoBehaviour
             Debug.Log("enterTag");
             if (canEliminate())
             {
+                animator.SetBool("isEat", true);
                 Debug.Log("enterElimate");
                 Destroy(collision.gameObject);
             }
