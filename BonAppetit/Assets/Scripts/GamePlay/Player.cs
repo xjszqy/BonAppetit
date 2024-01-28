@@ -7,7 +7,7 @@ using static UnityEngine.GraphicsBuffer;
 public class Player : MonoBehaviour
 {
     public MicroRecord microRecord;
-    public float minVolume=10f;
+    public float minVolume = 10f;
     public float canElimateVolume = 20f;
     public float minPosition = -3.5f;
     public float maxPosition = 4f;
@@ -16,13 +16,13 @@ public class Player : MonoBehaviour
     public bool shouldReturnToCenter = true;
     public bool eatLock = false;
     public float returnSpeed = 1f;
-    public Vector2 centerPoz= Vector2.zero;
+    public Vector2 centerPoz = Vector2.zero;
     public float targetY;
     public float time = 5f;
     Animator animator;
     public float currentEatingTime;
-    public float eatTime=0.2f;
-    public bool isEating=false;
+    public float eatTime = 0.2f;
+    public bool isEating = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +30,13 @@ public class Player : MonoBehaviour
     }
     public float Conversion(float pitch)
     {
-        if(pitch>maxPitch)
+        if (pitch > maxPitch)
         {
-            pitch= maxPitch;
+            pitch = maxPitch;
         }
-        else if(pitch<mintPitch)
+        else if (pitch < mintPitch)
         {
-            pitch= mintPitch;
+            pitch = mintPitch;
         }
         return (maxPosition - minPosition) / (maxPitch - mintPitch) * pitch + minPosition;
     }
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
         {
             currentEatingTime -= Time.deltaTime;
         }
-        if(currentEatingTime<=0)
+        if (currentEatingTime <= 0)
         {
             isEating = false;
             animator.SetBool("isEat", false);
@@ -70,12 +70,12 @@ public class Player : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, targetY), Time.deltaTime * returnSpeed);
             animator.SetBool("isMove", true);
         }
-        if(Mathf.Abs(transform.position.y-minPosition)<0.5)
+        if (Mathf.Abs(transform.position.y - minPosition) < 0.5)
         {
             animator.SetBool("isMove", false);
         }
 
-        
+
     }
     public bool canEliminate()
     {
@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.tag== "Yinfu")
+        if (collision.tag == "Yinfu")
         {
             if (canEliminate())
             {
