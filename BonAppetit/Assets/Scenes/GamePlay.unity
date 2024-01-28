@@ -2644,7 +2644,7 @@ MonoBehaviour:
   microRecord: {fileID: 423999369}
   minVolume: 15
   canElimateVolume: 15
-  minPosition: -3.3
+  minPosition: -8
   maxPosition: 4
   mintPitch: 120
   maxPitch: 440
@@ -6815,6 +6815,10 @@ PrefabInstance:
       value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 4629082797011350949, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4629082797011350949, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 226.75
       objectReference: {fileID: 0}
@@ -6900,11 +6904,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943290002599147491, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1500
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 6943290002599147491, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 800
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 6943290002599147491, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6936,7 +6940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943290002599147491, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.0033455
       objectReference: {fileID: 0}
     - target: {fileID: 6943290002599147491, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6953,6 +6957,26 @@ PrefabInstance:
     - target: {fileID: 6943290002599147491, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317581381904484329, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1272.7292
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317581381904484329, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317581381904484329, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317581381904484329, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 13.6354
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317581381904484329, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 347
       objectReference: {fileID: 0}
     - target: {fileID: 7389893109864961173, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_IsActive
@@ -11865,7 +11889,7 @@ MonoBehaviour:
   gameBegin: {fileID: 0}
   isStart: 0
   gameEnd: {fileID: 0}
-  endTime: 38
+  endTime: 40
   sheetMusic: {fileID: 1561854226}
   speed: 4
 --- !u!50 &1561854229

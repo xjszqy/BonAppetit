@@ -66,11 +66,11 @@ public class Player : MonoBehaviour
         }
         else
         {
-            targetY = minPosition;
+            targetY = -3.3f;
             transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, targetY), Time.deltaTime * returnSpeed);
             animator.SetBool("isMove", true);
         }
-        if (Mathf.Abs(transform.position.y - minPosition) < 0.5)
+        if (Mathf.Abs(transform.position.y - (-3.3f)) < 0.5)
         {
             animator.SetBool("isMove", false);
         }
