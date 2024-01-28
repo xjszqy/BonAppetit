@@ -19,6 +19,9 @@ public class Player : MonoBehaviour
     public float targetY;
     public float time = 5f;
     Animator animator;
+    public float currentEatingTime;
+    public float eatTime=0.2f;
+    public bool isEating=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +33,16 @@ public class Player : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {                        
+    {    
+        if(isEating)
+        {
+            currentEatingTime -= Time.deltaTime;
+        }
+        if(currentEatingTime<=0)
+        {
+            isEating = false;
+            animator.SetBool("isEat", false);
+        }
         if (microRecord != null && microRecord.volume > minVolume)
         {
             targetY = Conversion(microRecord.pitch);
@@ -61,19 +73,21 @@ public class Player : MonoBehaviour
             if (canEliminate())
             {
                 GamePlayUIManager.Instance.comboNumer++;
+                isEating = true;
+                currentEatingTime = eatTime;
                 animator.SetBool("isEat", true);
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
             }
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Yinfu")
-        {
-            if (canEliminate())
-            {
-                animator.SetBool("isEat", false);
-            }
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Yinfu")
+    //    {
+    //        if (canEliminate())
+    //        {
+    //            //animator.SetBool("isEat", false);
+    //        }
+    //    }
+    //}
 }

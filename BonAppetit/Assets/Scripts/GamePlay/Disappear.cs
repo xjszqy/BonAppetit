@@ -37,7 +37,6 @@ public class Disappear : MonoBehaviour
     private void Update()
     {
         lerpPoxitionX = DeadPoint.transform.position - DeadLine.transform.position;
-        Debug.Log((-lerpPoxitionX.x) * 2 - 5);
         if (isPressed && isCombo)
         {
             materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x)*2-5);
