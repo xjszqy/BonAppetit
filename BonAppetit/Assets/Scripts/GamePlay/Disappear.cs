@@ -39,7 +39,7 @@ public class Disappear : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "DeadLine")
+        if (collision.CompareTag("Player"))
         {
             isCombo = true;
             if (otherScript.canEliminate())
