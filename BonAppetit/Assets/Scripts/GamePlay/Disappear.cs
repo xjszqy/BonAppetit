@@ -18,17 +18,10 @@ public class Disappear : MonoBehaviour
     [Header("是否处于判定线")]
     public bool isCombo;
     SpriteRenderer sp;
+    public Player otherScript;
     private void Start()
     {
         GameObject otherGameObject = GameObject.Find("Q_character_1");
-        if (otherGameObject != null)
-        {
-            Player otherScript = otherGameObject.GetComponent<Player>();
-            if (otherScript != null)
-            {
-                isPressed = otherScript.canEliminate();
-            }
-        }
         materialInstance = new Material(material);
         sp = GetComponent<SpriteRenderer>();
         sp.material = materialInstance;
@@ -37,9 +30,9 @@ public class Disappear : MonoBehaviour
     private void Update()
     {
         lerpPoxitionX = DeadPoint.transform.position - DeadLine.transform.position;
-        if (isPressed && isCombo)
+        if (otherScript.canEliminate() && isCombo)
         {
-            materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x)*2-5);
+            materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x) * 2 - 5);
             comboParticleSystem.transform.position = this.transform.position;
         }
     }
@@ -49,18 +42,19 @@ public class Disappear : MonoBehaviour
         if (collision.name == "DeadLine")
         {
             isCombo = true;
-            if (isPressed) 
+            if (otherScript.canEliminate())
             {
+                Debug.Log("Enter");
                 comboParticleSystem.Play();
             }
-            
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (isPressed && collision.name=="DeadLine")
+        if (otherScript.canEliminate() && collision.name == "DeadLine")
         {
-            isCombo=false;
+            isCombo = false;
             Destroy(this.gameObject);
         }
     }

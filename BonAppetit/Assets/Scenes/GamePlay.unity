@@ -315,6 +315,7 @@ MonoBehaviour:
   comboParticleSystem: {fileID: 1925131296}
   isPressed: 0
   isCombo: 0
+  otherScript: {fileID: 423999365}
 --- !u!61 &77918107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -610,6 +611,7 @@ MonoBehaviour:
   comboParticleSystem: {fileID: 1925131296}
   isPressed: 0
   isCombo: 0
+  otherScript: {fileID: 423999365}
 --- !u!61 &233229297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1034,8 +1036,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microRecord: {fileID: 423999369}
-  minVolume: 10
-  canElimateVolume: 11
+  minVolume: 11
+  canElimateVolume: 10
   minPosition: -3.3
   maxPosition: 4
   mintPitch: 90
@@ -1046,6 +1048,9 @@ MonoBehaviour:
   centerPoz: {x: 0, y: 0}
   targetY: 0
   time: 5
+  currentEatingTime: 0
+  eatTime: 0.2
+  isEating: 0
 --- !u!61 &423999366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2866,6 +2871,7 @@ MonoBehaviour:
   comboParticleSystem: {fileID: 1925131296}
   isPressed: 0
   isCombo: 0
+  otherScript: {fileID: 423999365}
 --- !u!61 &730988747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4372,6 +4378,7 @@ MonoBehaviour:
   comboParticleSystem: {fileID: 1925131296}
   isPressed: 0
   isCombo: 0
+  otherScript: {fileID: 423999365}
 --- !u!114 &1440148662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4487,6 +4494,7 @@ MonoBehaviour:
   comboParticleSystem: {fileID: 1925131296}
   isPressed: 0
   isCombo: 0
+  otherScript: {fileID: 423999365}
 --- !u!61 &1544358859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4821,7 +4829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2827276502827800156, guid: 67a4687c45f34a344886a59f8f7c4de6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.05
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2827276502827800156, guid: 67a4687c45f34a344886a59f8f7c4de6, type: 3}
       propertyPath: m_LocalRotation.w
