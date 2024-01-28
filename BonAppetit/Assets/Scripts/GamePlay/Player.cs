@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
         {
             if (canEliminate())
             {
+                GamePlayUIManager.Instance.comboNumer++;
                 animator.SetBool("isEat", true);
                 Destroy(collision.gameObject);
             }

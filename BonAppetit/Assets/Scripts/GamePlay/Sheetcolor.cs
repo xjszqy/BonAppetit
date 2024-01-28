@@ -23,6 +23,7 @@ public class Sheetcolor : MonoBehaviour
         {
             failParticleSystem.Play();
             failParticleSystem.transform.position = this.transform.position;
+            GamePlayUIManager.Instance.comboNumer = 0;
             Destroy(gameObject);
         }
     }

@@ -12,11 +12,14 @@ public class GamePlayUIManager : Singleton<GamePlayUIManager>
     public Button restartBtn;
     public Button backToMenuBtn;
     public Button staffBtn;
+    public Text comboText;
+    public int comboNumer=0;
     private void OnEnable()
     {
         restartBtn.onClick.AddListener(ReStart);
         backToMenuBtn.onClick.AddListener(BackToMenu);
         staffBtn.onClick.AddListener(Staff);
+        comboNumer = 0;
     }
 
 
@@ -25,6 +28,10 @@ public class GamePlayUIManager : Singleton<GamePlayUIManager>
         restartBtn.onClick.RemoveAllListeners();
         backToMenuBtn.onClick.RemoveAllListeners();
         staffBtn.onClick.RemoveAllListeners();
+    }
+    private void Update()
+    {
+        comboText.text = comboNumer.ToString()+" COMBO";
     }
     public void OpenSettlePanel()
     {
