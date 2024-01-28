@@ -38,14 +38,15 @@ public class Disappear : MonoBehaviour
         //}
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.name == "DeadLine")
         {
+            Debug.Log("EnterLine");
             isCombo = true;
             if (isPressed)
             {
-                Debug.Log("Enter");
+                Debug.Log("PressOk");
                 materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x) * 2 - 5);
                 comboParticleSystem.transform.position = this.transform.position;
                 comboParticleSystem.Play();

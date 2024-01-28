@@ -73,13 +73,14 @@ public class Player : MonoBehaviour
     {
         return (microRecord.volume > canElimateVolume);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag== "Yinfu")
         {
             if (canEliminate())
             {
                 GamePlayUIManager.Instance.comboNumer++;
+                Debug.Log("enter");
                 collision.GetComponent<Disappear>().isPressed = true;
                 //isEating = true;
                 //currentEatingTime = eatTime;
