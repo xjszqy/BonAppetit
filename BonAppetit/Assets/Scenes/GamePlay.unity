@@ -2616,7 +2616,7 @@ MonoBehaviour:
   canElimateVolume: 11
   minPosition: -3.3
   maxPosition: 4
-  mintPitch: 90
+  mintPitch: 120
   maxPitch: 440
   shouldReturnToCenter: 1
   eatLock: 0
@@ -2711,7 +2711,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.041
+  m_Volume: 0.744
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11611,7 +11611,7 @@ Transform:
   m_GameObject: {fileID: 1561854226}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: 23.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11682,9 +11682,9 @@ MonoBehaviour:
   gameBegin: {fileID: 0}
   isStart: 0
   gameEnd: {fileID: 0}
-  endTime: 15
+  endTime: 60
   sheetMusic: {fileID: 1561854226}
-  speed: 3
+  speed: 5
 --- !u!50 &1561854229
 Rigidbody2D:
   serializedVersion: 4
