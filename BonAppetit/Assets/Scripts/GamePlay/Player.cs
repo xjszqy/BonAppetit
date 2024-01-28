@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
                 GamePlayUIManager.Instance.comboNumer++;
                 Debug.Log("enter");
                 collision.GetComponent<Disappear>().isPressed = true;
+
                 //isEating = true;
                 //currentEatingTime = eatTime;
                 //animator.SetBool("isEat", true);

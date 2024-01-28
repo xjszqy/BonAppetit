@@ -19,6 +19,8 @@ public class Disappear : MonoBehaviour
     public bool isCombo;
     SpriteRenderer sp;
     public Player otherScript;
+    [Header("≥‘∑π“Ù–ß")]
+    public AudioData Eating;
     private void Start()
     {
         GameObject otherGameObject = GameObject.Find("Q_character_1");
@@ -49,6 +51,7 @@ public class Disappear : MonoBehaviour
                 Debug.Log("PressOk");
                 materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x) * 2 - 5);
                 comboParticleSystem.transform.position = this.transform.position;
+                AudioManager.Instance.PlayAudio(Eating);
                 comboParticleSystem.Play();
                 Destroy(gameObject);
             }
