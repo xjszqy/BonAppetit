@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float mintPitch = 90f;
     public float maxPitch = 440f;
     public bool shouldReturnToCenter = true;
+    public bool eatLock = false;
     public float returnSpeed = 1f;
     public Vector2 centerPoz= Vector2.zero;
     public float targetY;
@@ -46,7 +47,8 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isMove", false);
         }
-        animator.SetBool("isEat", false);
+
+        
     }
     public bool canEliminate()
     {
@@ -54,14 +56,22 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("enter");
         if(collision.tag== "Yinfu")
         {
-            Debug.Log("enterTag");
             if (canEliminate())
             {
-                Debug.Log("enterElimate");
+                animator.SetBool("isEat", true);
                 Destroy(collision.gameObject);
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Yinfu")
+        {
+            if (canEliminate())
+            {
+                animator.SetBool("isEat", false);
             }
         }
     }
