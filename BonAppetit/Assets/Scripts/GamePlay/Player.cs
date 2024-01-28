@@ -28,9 +28,7 @@ public class Player : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
-           
-                 
+    {                        
         if (microRecord != null && microRecord.volume > minVolume)
         {
             targetY = Conversion(microRecord.pitch);
