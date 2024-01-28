@@ -33,6 +33,7 @@ public class GamePlay : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 isStart = true;
+                AudioManager.Instance.musicPlayer.Play();
                 //gameBegin.SetActive(false);
             }
         }
