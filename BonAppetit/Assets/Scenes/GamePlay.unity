@@ -1034,9 +1034,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microRecord: {fileID: 423999369}
-  minVolume: 1
-  canElimateVolume: 3
-  minPosition: -3.5
+  minVolume: 10
+  canElimateVolume: 11
+  minPosition: -3.3
   maxPosition: 4
   mintPitch: 90
   maxPitch: 440
@@ -1078,7 +1078,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02114296, y: -0.042286396}
+  m_Offset: {x: -0.5696107, y: 0.14356834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1089,7 +1089,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4948983, y: 3.198892}
+  m_Size: {x: 2.313391, y: 2.8271828}
   m_EdgeRadius: 0
 --- !u!50 &423999367
 Rigidbody2D:
