@@ -44,4 +44,17 @@ public class Player : MonoBehaviour
     {
         return (microRecord.volume > canElimateVolume);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("enter");
+        if(collision.tag== "Yinfu")
+        {
+            Debug.Log("enterTag");
+            if (canEliminate())
+            {
+                Debug.Log("enterElimate");
+                Destroy(collision.gameObject);
+            }
+        }
+    }
 }
