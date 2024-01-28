@@ -6,7 +6,7 @@ public class Disappear : MonoBehaviour
 {
     [Header("ÏûÊ§²ÄÖÊ")]
     public Material material;
-    public Material materialInstance;
+    Material materialInstance;
     [Header("Òô·û")]
     public GameObject DeadPoint;
     public GameObject DeadLine;
@@ -20,6 +20,15 @@ public class Disappear : MonoBehaviour
     SpriteRenderer sp;
     private void Start()
     {
+        GameObject otherGameObject = GameObject.Find("Q_character_1");
+        if (otherGameObject != null)
+        {
+            Player otherScript = otherGameObject.GetComponent<Player>();
+            if (otherScript != null)
+            {
+                isPressed = otherScript.canEliminate();
+            }
+        }
         materialInstance = new Material(material);
         sp = GetComponent<SpriteRenderer>();
         sp.material = materialInstance;
@@ -28,9 +37,10 @@ public class Disappear : MonoBehaviour
     private void Update()
     {
         lerpPoxitionX = DeadPoint.transform.position - DeadLine.transform.position;
-        if (isPressed&&isCombo)
+        Debug.Log((-lerpPoxitionX.x) * 2 - 5);
+        if (isPressed && isCombo)
         {
-            materialInstance.SetFloat("_DisappearOffset", -lerpPoxitionX.x + 2f);
+            materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x)*2-5);
             comboParticleSystem.transform.position = this.transform.position;
         }
     }
@@ -49,10 +59,10 @@ public class Disappear : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (isPressed&&collision.name=="DeadLine")
+        if (isPressed && collision.name=="DeadLine")
         {
             isCombo=false;
-            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }
