@@ -52,7 +52,7 @@ public class Disappear : MonoBehaviour
         if (isPressed&&collision.name=="DeadLine")
         {
             isCombo=false;
-            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }
