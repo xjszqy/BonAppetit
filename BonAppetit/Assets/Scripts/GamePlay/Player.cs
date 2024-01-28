@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public MicroRecord microRecord;
     public float minVolume=10f;
     public float canElimateVolume = 20f;
-    public float minPosition = -4f;
+    public float minPosition = -3.5f;
     public float maxPosition = 4f;
     public float mintPitch = 90f;
     public float maxPitch = 440f;
@@ -42,7 +42,10 @@ public class Player : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, targetY), Time.deltaTime * returnSpeed);
             animator.SetBool("isMove", true);
         }
-        animator.SetBool("isMove", false);
+        if(Mathf.Abs(transform.position.y-minPosition)<0.05)
+        {
+            animator.SetBool("isMove", false);
+        }
         animator.SetBool("isEat", false);
     }
     public bool canEliminate()
@@ -57,7 +60,6 @@ public class Player : MonoBehaviour
             Debug.Log("enterTag");
             if (canEliminate())
             {
-                animator.SetBool("isEat", true);
                 Debug.Log("enterElimate");
                 Destroy(collision.gameObject);
             }
