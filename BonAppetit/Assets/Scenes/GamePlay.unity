@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   microRecord: {fileID: 423999369}
   minVolume: 10
-  canElimateVolume: 20
+  canElimateVolume: 10
   minPosition: -3.5
   maxPosition: 4
   mintPitch: 90
@@ -4632,7 +4632,7 @@ Transform:
   m_GameObject: {fileID: 1440148656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.56, y: 0.83, z: 0}
+  m_LocalPosition: {x: 7.8, y: 0.65, z: 0}
   m_LocalScale: {x: 0.4537621, y: 0.4537621, z: 0.4537621}
   m_ConstrainProportionsScale: 0
   m_Children:
