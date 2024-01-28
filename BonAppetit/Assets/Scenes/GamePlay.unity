@@ -4718,8 +4718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f0ddf50bc5bd746a21480afc8127f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxPlayer: {fileID: 0}
-  musicPlayer: {fileID: 0}
+  sfxPlayer: {fileID: 968118195}
+  musicPlayer: {fileID: 265565428}
 --- !u!4 &1582360082
 Transform:
   m_ObjectHideFlags: 0
