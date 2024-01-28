@@ -5,8 +5,6 @@ using UnityEngine;
 public class Sheetcolor : MonoBehaviour
 {
     private SpriteRenderer spRender;
-    [Header("判定线")]
-    public GameObject deadLine;
     [Header("fail特效")]
     public ParticleSystem failParticleSystem;
     [Header("Combo特效")]
@@ -25,6 +23,7 @@ public class Sheetcolor : MonoBehaviour
         {
             failParticleSystem.Play();
             failParticleSystem.transform.position = this.transform.position;
+            GamePlayUIManager.Instance.comboNumer = 0;
             Destroy(gameObject);
         }
     }
