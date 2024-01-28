@@ -1,13 +1,13 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Sheetcolor : MonoBehaviour
 {
     private SpriteRenderer spRender;
-    [Header("fail特效")]
+    [Header("fail鐗规晥")]
     public ParticleSystem failParticleSystem;
-    [Header("Combo特效")]
+    [Header("Combo鐗规晥")]
     public ParticleSystem comboParticleSystem;
     private void Start()
     {

@@ -378,6 +378,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &77918107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -544,6 +547,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &78242445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -710,6 +716,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &80117300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1068,6 +1077,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &162096178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1234,6 +1246,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &192279210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1400,6 +1415,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &195269433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1597,6 +1615,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &204938893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1763,6 +1784,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &209041692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1929,6 +1953,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &233229297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2285,6 +2312,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &293297680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4417,6 +4447,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &447125477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4583,6 +4616,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &452137392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4842,6 +4878,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &497080268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5008,6 +5047,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &501966088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5205,6 +5247,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &538685350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5433,6 +5478,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &560484480
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5599,6 +5647,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &566321704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5765,6 +5816,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &604729783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5993,6 +6047,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &639768206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6159,6 +6216,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &640210385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6356,6 +6416,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &702721616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6553,6 +6616,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &730988747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6730,7 +6796,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: fdb665b713d2bc542b93125d1e1e4e89, type: 3}
     - target: {fileID: 3794739638107488295, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4629082797011350949, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6770,7 +6836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5177363758966807875, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5838618425585691659, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6890,7 +6956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7389893109864961173, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7700524450384656766, guid: 15357ca960b2c0b4abd25659fc608e2a, type: 3}
       propertyPath: m_Name
@@ -7091,6 +7157,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &788358704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7257,6 +7326,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &811910595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7485,6 +7557,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &869568522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7925,6 +8000,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &986321597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8091,6 +8169,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1014910250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8257,6 +8338,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1067316094
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8423,6 +8507,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1077597485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9206,6 +9293,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1110564454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9403,6 +9493,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1130708405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9637,6 +9730,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1146539837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9803,6 +9899,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1159032129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10250,6 +10349,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1259082591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10416,6 +10518,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1269398499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10873,6 +10978,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!114 &1440148662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10987,6 +11095,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1475226802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11184,6 +11295,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1518150902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11383,6 +11497,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1537513363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11549,6 +11666,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1544358859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11674,7 +11794,7 @@ Transform:
   m_GameObject: {fileID: 1561854226}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.1, y: 0, z: 0}
+  m_LocalPosition: {x: 6.44, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11745,9 +11865,9 @@ MonoBehaviour:
   gameBegin: {fileID: 0}
   isStart: 0
   gameEnd: {fileID: 0}
-  endTime: 60
+  endTime: 18
   sheetMusic: {fileID: 1561854226}
-  speed: 5
+  speed: 9
 --- !u!50 &1561854229
 Rigidbody2D:
   serializedVersion: 4
@@ -11857,6 +11977,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1573352304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12102,6 +12225,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1626051263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12268,6 +12394,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1652169636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12434,6 +12563,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1667662328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12662,6 +12794,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1747913124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12921,6 +13056,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1858007300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13118,6 +13256,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1878631286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13346,6 +13487,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &1920076084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13680,6 +13824,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &2035204629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13846,6 +13993,9 @@ MonoBehaviour:
   isPressed: 0
   isCombo: 0
   otherScript: {fileID: 423999365}
+  Eating:
+    volume: 1
+    clip: {fileID: 8300000, guid: 92f1cf5e819bdcc47a1bbf35e83f0a23, type: 3}
 --- !u!61 &2056554979
 BoxCollider2D:
   m_ObjectHideFlags: 0
