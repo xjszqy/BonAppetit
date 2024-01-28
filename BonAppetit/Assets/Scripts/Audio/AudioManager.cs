@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class AudioManager : PersistentSingleton<AudioManager>
+public class AudioManager : Singleton<AudioManager>
 {
     public const float Min_Pitch = 0.9f;
     public const float Max_Pitch = 1.1f;

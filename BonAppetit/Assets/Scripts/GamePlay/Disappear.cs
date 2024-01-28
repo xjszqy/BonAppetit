@@ -30,11 +30,12 @@ public class Disappear : MonoBehaviour
     private void Update()
     {
         lerpPoxitionX = DeadPoint.transform.position - DeadLine.transform.position;
-        if (otherScript.canEliminate() && isCombo)
-        {
-            materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x) * 2 - 5);
-            comboParticleSystem.transform.position = this.transform.position;
-        }
+        //if (otherScript.isEating && isCombo)
+        //{
+        //    materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x) * 2 - 5);
+        //    comboParticleSystem.transform.position = this.transform.position;
+        //    Debug.Log(this.transform.position + comboParticleSystem.transform.position);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,17 +43,20 @@ public class Disappear : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isCombo = true;
-            if (otherScript.canEliminate())
+            if (isPressed)
             {
                 Debug.Log("Enter");
+                materialInstance.SetFloat("_DisappearOffset", (-lerpPoxitionX.x) * 2 - 5);
+                comboParticleSystem.transform.position = this.transform.position;
                 comboParticleSystem.Play();
+                Destroy(gameObject);
             }
 
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (otherScript.canEliminate() && collision.name == "DeadLine")
+        if (isPressed && collision.name == "DeadLine")
         {
             isCombo = false;
             Destroy(this.gameObject);
