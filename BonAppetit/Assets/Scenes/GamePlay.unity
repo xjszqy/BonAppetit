@@ -2642,8 +2642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microRecord: {fileID: 423999369}
-  minVolume: 10
-  canElimateVolume: 11
+  minVolume: 15
+  canElimateVolume: 15
   minPosition: -3.3
   maxPosition: 4
   mintPitch: 120
@@ -11865,9 +11865,9 @@ MonoBehaviour:
   gameBegin: {fileID: 0}
   isStart: 0
   gameEnd: {fileID: 0}
-  endTime: 18
+  endTime: 38
   sheetMusic: {fileID: 1561854226}
-  speed: 9
+  speed: 4
 --- !u!50 &1561854229
 Rigidbody2D:
   serializedVersion: 4
