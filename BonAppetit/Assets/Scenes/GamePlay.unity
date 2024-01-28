@@ -274,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &42870998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3691,7 +3691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &960051720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5092,7 +5092,7 @@ MonoBehaviour:
   gameBegin: {fileID: 0}
   isStart: 0
   gameEnd: {fileID: 0}
-  endTime: 90
+  endTime: 10
   sheetMusic: {fileID: 1561854226}
   speed: 3
 --- !u!50 &1561854229

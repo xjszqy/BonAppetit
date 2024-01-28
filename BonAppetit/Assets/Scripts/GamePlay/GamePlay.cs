@@ -60,7 +60,7 @@ public class GamePlay : MonoBehaviour
         }
         else
         {
-            //gameEnd.SetActive(true);
+            GamePlayUIManager.Instance.OpenSettlePanel();
         }
     }
 
