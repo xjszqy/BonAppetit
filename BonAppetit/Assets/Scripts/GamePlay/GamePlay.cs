@@ -17,6 +17,8 @@ public class GamePlay : MonoBehaviour
     public GameObject sheetMusic;
     [Header("速度")]
     public float speed;
+    [Header("任意键开始")]
+    public GameObject introduce2;
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -33,8 +35,9 @@ public class GamePlay : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 isStart = true;
+
                 AudioManager.Instance.musicPlayer.Play();
-                //gameBegin.SetActive(false);
+                introduce2.SetActive(false);
             }
         }
         else
