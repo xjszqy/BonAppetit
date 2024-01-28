@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public MicroRecord microRecord;
     public float minVolume=10f;
-    public float canElimateVolume = 30f;
+    public float canElimateVolume = 20f;
     public float minPosition = -4f;
     public float maxPosition = 4f;
     public float mintPitch = 90f;
@@ -29,17 +29,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (time>0f)
-        {
-            time -= Time.deltaTime;
-        }
-        else
-        {
-            GamePlayUIManager.Instance.OpenSettlePanel();
-        }
-        
-            
-        
+           
+                 
         if (microRecord != null && microRecord.volume > minVolume)
         {
             targetY = Conversion(microRecord.pitch);
