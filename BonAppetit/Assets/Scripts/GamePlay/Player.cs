@@ -30,6 +30,14 @@ public class Player : MonoBehaviour
     }
     public float Conversion(float pitch)
     {
+        if(pitch>maxPitch)
+        {
+            pitch= maxPitch;
+        }
+        else if(pitch<mintPitch)
+        {
+            pitch= mintPitch;
+        }
         return (maxPosition - minPosition) / (maxPitch - mintPitch) * pitch + minPosition;
     }
     // Update is called once per frame
