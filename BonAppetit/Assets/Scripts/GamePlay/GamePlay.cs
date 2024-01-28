@@ -33,7 +33,7 @@ public class GamePlay : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 isStart = true;
-                gameBegin.SetActive(false);
+                //gameBegin.SetActive(false);
             }
         }
         else
@@ -60,7 +60,7 @@ public class GamePlay : MonoBehaviour
         }
         else
         {
-            gameEnd.SetActive(true);
+            //gameEnd.SetActive(true);
         }
     }
 

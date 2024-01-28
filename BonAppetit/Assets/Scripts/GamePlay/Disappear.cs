@@ -13,15 +13,13 @@ public class Disappear : MonoBehaviour
     [Header("粒子特效")]
     public ParticleSystem comboParticleSystem;
     private Vector2 lerpPoxitionX;
-    [Header("是否点击")]
+    [Header("是否按下")]
     public bool isPressed;
     [Header("是否处于判定线")]
-    Player player;
     public bool isCombo;
     SpriteRenderer sp;
     private void Start()
     {
-        player = GetComponent<Player>();
         materialInstance = new Material(material);
         sp = GetComponent<SpriteRenderer>();
         sp.material = materialInstance;
@@ -30,11 +28,6 @@ public class Disappear : MonoBehaviour
     private void Update()
     {
         lerpPoxitionX = DeadPoint.transform.position - DeadLine.transform.position;
-        if (player != null)
-        {
-            isPressed = player.canEliminate();
-        }
-        Debug.Log(-lerpPoxitionX.x + 2.5f);
         if (isPressed&&isCombo)
         {
             materialInstance.SetFloat("_DisappearOffset", -lerpPoxitionX.x + 2f);
@@ -50,7 +43,8 @@ public class Disappear : MonoBehaviour
             if (isPressed) 
             {
                 comboParticleSystem.Play();
-            }   
+            }
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

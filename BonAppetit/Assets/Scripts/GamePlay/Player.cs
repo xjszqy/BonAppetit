@@ -28,9 +28,7 @@ public class Player : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
-           
-                 
+    {                        
         if (microRecord != null && microRecord.volume > minVolume)
         {
             targetY = Conversion(microRecord.pitch);
@@ -45,5 +43,18 @@ public class Player : MonoBehaviour
     public bool canEliminate()
     {
         return (microRecord.volume > canElimateVolume);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("enter");
+        if(collision.tag== "Yinfu")
+        {
+            Debug.Log("enterTag");
+            if (canEliminate())
+            {
+                Debug.Log("enterElimate");
+                Destroy(collision.gameObject);
+            }
+        }
     }
 }
